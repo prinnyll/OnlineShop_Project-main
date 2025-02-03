@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon app.js",
-    "build": "node app.js",
+    "build": "node netlify/edge-functions/index.js",
     "deploy": "gh-pages -d public"
   },
   "keywords": [],
