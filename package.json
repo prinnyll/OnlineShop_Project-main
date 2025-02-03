@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon app.js",
-    "build": "node index.js"
+    "build": "node index.js",
+    "deploy": "gh-pages -d public"
   },
   "keywords": [],
   "author": "Johnny",
