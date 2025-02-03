@@ -1,0 +1,11 @@
+[build]
+  command = "node netlify/edge-functions/index.js"
+  publish = "data"
+
+[[edge_functions]]
+  path = "/index"
+  function = "netlify/edge-functions/index"
+
+[[redirects]]
+  from = "/*"
+  to = "/index"

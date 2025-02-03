@@ -1,0 +1,84 @@
+@media (max-width: 768px) {
+  /* products-mobile.css */
+
+  /* Make the product grid more responsive */
+  #products-grid {
+    grid-template-columns: repeat(
+      1,
+      1fr
+    ); /* switch to a single column on mobile */
+    gap: var(--space-2); /* reduce the gap between products */
+  }
+
+  /* Make product items more compact */
+  .product-item {
+    padding: var(--space-2); /* reduce padding */
+  }
+
+  .product-item img {
+    height: 15rem; /* reduce image height */
+    object-fit: cover; /* maintain aspect ratio */
+  }
+
+  /* Adjust product info layout */
+  .product-item-content {
+    padding: var(--space-2); /* reduce padding */
+  }
+
+  .product-item-content h2 {
+    font-size: 1rem; /* reduce font size */
+  }
+
+  /* Adjust product actions layout */
+  .product-item-actions {
+    flex-direction: column; /* switch to a vertical layout */
+    gap: var(--space-1); /* reduce gap between actions */
+  }
+
+  /* Adjust product details layout */
+  #product-details {
+    padding: var(--space-2); /* reduce padding */
+  }
+
+  #product-details img {
+    width: 100%; /* make image full-width */
+    height: 15rem; /* reduce image height */
+    object-fit: cover; /* maintain aspect ratio */
+  }
+
+  /* Adjust product info layout */
+  #product-info {
+    padding: var(--space-2); /* reduce padding */
+  }
+
+  #product-info h4 {
+    font-size: 1rem; /* reduce font size */
+  }
+
+  /* Adjust product description layout */
+  #product-description {
+    padding: var(--space-2); /* reduce padding */
+  }
+
+  .product_list {
+    width: 100%;
+    padding: var(--space-2);
+  }
+
+  .product_list li {
+    width: 100%;
+    margin: var(--space-2) 0;
+  }
+
+  .product_list img {
+    width: 100%;
+  }
+
+  .product_list .tit {
+    font-size: 1rem;
+  }
+
+  .product_list .tit span {
+    padding: var(--space-1);
+  }
+}

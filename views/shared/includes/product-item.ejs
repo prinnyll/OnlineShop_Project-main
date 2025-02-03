@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="/styles/products-mobile.css" />
+<article class="product-item">
+  <div>
+    <a href="/products/<%= product.id %>">
+      <img src="<%= product.imageUrl %>" alt="<%= product.title %>" />
+    </a>
+  </div>
+  <div class="product-item-content">
+    <a href="/products/<%= product.id %>">
+      <h2><%= product.title %></h2>
+    </a>
+    <div class="product-item-actions">
+      <% if (locals.isAdmin) { %>
+      <a class="btn btn-alt" href="/admin/products/<%= product.id %>"
+        >View & Edit</a
+      >
+      <button
+        class="btn btn-alt"
+        data-product-id="<%= product.id %>"
+        data-csrf="<%= locals.doubleCsrfToken %>"
+      >
+        Delete
+      </button>
+      <% } else { %>
+      <a class="btn btn-alt" href="/products/<%= product.id %>">View Details</a>
+      <% } %>
+    </div>
+  </div>
+</article>

@@ -1,0 +1,205 @@
+<%- include('../../shared/includes/head', { pageTitle: product.title }) %>
+<link rel="stylesheet" href="/styles/products.css">
+<link rel="stylesheet" href="/styles/products-mobile.css">
+<script src="/scripts/cart-management.js" defer></script>
+</head>
+<body>
+  <%- include('../../shared/includes/header') %>
+  <main id="product-details">
+    <header>
+      <img src="<%= product.imageUrl %>" alt="<%= product.title %>">
+      <div id="product-info">
+        <h1><%= product.title %></h1>
+        <h4><%= product.summary %></h4>
+        <hr>
+        <p>$<%= product.price %></p>
+        <hr>
+        <h2>Materials</h2>
+        <p><%= product.materials %></p>
+        <hr>
+        <h2>Dimensions</h2>
+        <p><%= product.dimensions %></p>
+        <hr>
+        
+        
+        <button class="btn" data-productid="<%= product.id %>" data-csrf="<%= locals.doubleCsrfToken %>">Add to Cart</button>
+      </div>
+    </header>
+    
+    <p id="product-description"><%= product.description %></p>
+
+    
+  </main>
+
+ 
+  <div class="product_list">
+    <h3 class="tit"><span>Product</span></h3>
+    <% if(product.id === "6795df576337ef499e18e6a9") { %>
+      <ul id="products-grids">
+        <li>
+          <img src="/imagesProduct/aduop1_1.png" alt="" >
+        </li>
+        <li>
+          <img src="/imagesProduct/aduop1_2.png" alt="" >
+        </li>
+        <li>
+          <img src="/imagesProduct/aduop1_3.png" alt="" >
+        </li>
+      </ul>
+    <% } else if(product.id === "6795e1846337ef499e18e6ab") { %>
+      <ul id="products-grids">
+        <li>
+          <img src="/imagesProduct/aduop2_1.png" alt="" >
+        </li>
+        <li>
+          <img src="/imagesProduct/aduop2_2.png" alt="" >
+        </li>
+        <li>
+          <img src="/imagesProduct/aduop2_3.png" alt="" >
+        </li>
+        <li>
+          <img src="/imagesProduct/aduop2_4.png" alt="" >
+        </li>
+      </ul>
+      <% } else if(product.id === "6795e2446337ef499e18e6ac") { %>
+        <ul id="products-grids">
+          <li>
+            <img src="/imagesProduct/aduop3_1.png" alt="" >
+          </li>
+          <li>
+            <img src="/imagesProduct/aduop3_2.png" alt="" >
+          </li>
+          <li>
+            <img src="/imagesProduct/aduop3_3.png" alt="" >
+          </li>
+          <li>
+            <img src="/imagesProduct/aduop3_4.png" alt="" >
+          </li>
+        </ul>
+        <% } else if(product.id === "6795e2a06337ef499e18e6ad") { %>
+          <ul id="products-grids">
+            <li>
+              <img src="/imagesProduct/aduop4_1.png" alt="" >
+            </li>
+            <li>
+              <img src="/imagesProduct/aduop4_2.png" alt="" >
+            </li>
+           
+          </ul>
+          <% } else if(product.id === "6795e35e6337ef499e18e6ae") { %>
+            <ul id="products-grids">
+              <li>
+                <img src="/imagesProduct/aduop5_1.png" alt="" >
+              </li>
+              <li>
+                <img src="/imagesProduct/aduop5_2.png" alt="" >
+              </li>
+              <li>
+                <img src="/imagesProduct/aduop5_3.png" alt="" >
+              </li>
+              <li>
+                <img src="/imagesProduct/aduop5_4.png" alt="" >
+              </li>
+              <li>
+                <img src="/imagesProduct/aduop5_5.png" alt="" >
+              </li>
+            </ul>
+            <% } else if(product.id === "6795e8626337ef499e18e6af") { %>
+              <ul id="products-grids">
+                <li>
+                  <img src="/imagesProduct/aduop6_1.png" alt="" >
+                </li>
+                <li>
+                  <img src="/imagesProduct/aduop6_2.png" alt="" >
+                </li>
+                <li>
+                  <img src="/imagesProduct/aduop6_3.png" alt="" >
+                </li>
+                <li>
+                  <img src="/imagesProduct/aduop6_4.png" alt="" >
+                </li>
+                <li>
+                  <img src="/imagesProduct/aduop6_5.png" alt="" >
+                </li> 
+                <li>
+                  <img src="/imagesProduct/aduop6_6.png" alt="" >
+                </li>
+              </ul>
+              <% } else if(product.id === "6795e97b6337ef499e18e6b0") { %>
+                <ul id="products-grids">
+                  <li>
+                    <img src="/imagesProduct/aduop7_1.png" alt="" >
+                  </li>
+                  <li>
+                    <img src="/imagesProduct/aduop7_2.png" alt="" >
+                  </li>
+                  <li>
+                    <img src="/imagesProduct/aduop7_3.png" alt="" >
+                  </li>
+                </ul>
+                <% } else if(product.id === "6795e9d36337ef499e18e6b1") { %>
+                  <ul id="products-grids">
+                    <li>
+                      <img src="/imagesProduct/aduop8_1.png" alt="" >
+                    </li>
+                    <li>
+                      <img src="/imagesProduct/aduop8_2.png" alt="" >
+                    </li>
+                    <li>
+                      <img src="/imagesProduct/aduop8_3.png" alt="" >
+                    </li>
+                  </ul>
+                  <% } else if(product.id === "67960483239924cafd0a6b9f") { %>
+                    <ul id="products-grids">
+                      <li>
+                        <img src="/imagesProduct/aduop9_1.png" alt="" >
+                      </li>
+                      <li>
+                        <img src="/imagesProduct/aduop9_2.png" alt="" >
+                      </li>
+                      <li>
+                        <img src="/imagesProduct/aduop9_3.png" alt="" >
+                      </li>
+                    </ul>
+                    <% } else if(product.id === "679604db239924cafd0a6ba0") { %>
+                      <ul id="products-grids">
+                        <li>
+                          <img src="/imagesProduct/aduop10_1.png" alt="" >
+                        </li>
+                        <li>
+                          <img src="/imagesProduct/aduop10_2.png" alt="" >
+                        </li>
+                        <li>
+                          <img src="/imagesProduct/aduop10_3.png" alt="" >
+                        </li>
+                      </ul>
+                      <% } else if(product.id === "67960536239924cafd0a6ba1") { %>
+                        <ul id="products-grids">
+                          <li>
+                            <img src="/imagesProduct/aduop11_1.png" alt="" >
+                          </li>
+                          <li>
+                            <img src="/imagesProduct/aduop11_2.png" alt="" >
+                          </li>
+                          <li>
+                            <img src="/imagesProduct/aduop11_3.png" alt="" >
+                          </li>
+                        </ul>
+                        <% } else if(product.id === "679605f3239924cafd0a6ba2") { %>
+                          <ul id="products-grids">
+                            <li>
+                              <img src="/imagesProduct/aduop12_1.png" alt="" >
+                            </li>
+                            <li>
+                              <img src="/imagesProduct/aduop12_2.png" alt="" >
+                            </li>
+                            <li>
+                              <img src="/imagesProduct/aduop12_3.png" alt="" >
+                            </li>
+                          </ul>
+                          <% } %>
+
+  </div>
+
+  
+<%- include('../../shared/includes/footer') %>

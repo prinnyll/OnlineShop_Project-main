@@ -1,0 +1,59 @@
+@media (max-width: 768px) {
+  /* cart-mobile.css */
+
+  /* Make the cart item list more compact */
+  .cart-item {
+    padding: var(--space-2); /* reduce padding */
+  }
+
+  .cart-item h2 {
+    font-size: 1rem; /* reduce font size */
+  }
+
+  .cart-item input {
+    font: inherit;
+    padding: var(--space-1); /* reduce padding */
+    border-radius: var(--border-radius-small);
+    border: none;
+  }
+
+  .cart-product-price {
+    font-style: italic;
+    color: var(--color-gray-300);
+  }
+
+  /* Adjust cart total layout */
+  #cart-total {
+    padding: var(--space-2); /* reduce padding */
+  }
+
+  #cart-total p {
+    font-size: 1.5rem; /* reduce font size */
+    font-weight: bold;
+    color: var(--color-primary-400);
+  }
+
+  #cart-total #cart-total-fallback {
+    font-size: 1rem; /* reduce font size */
+    font-weight: normal;
+  }
+
+  /* Make the cart item management form more compact */
+  .cart-item-management {
+    padding: var(--space-1); /* reduce padding */
+  }
+
+  .cart-item-management input[type="number"] {
+    width: 100%; /* make input full-width */
+    padding: var(--space-1); /* reduce padding */
+    border-radius: var(--border-radius-small);
+    border: none;
+  }
+
+  .cart-item-management button[type="submit"] {
+    width: 100%; /* make button full-width */
+    padding: var(--space-1); /* reduce padding */
+    border-radius: var(--border-radius-small);
+    border: none;
+  }
+}
